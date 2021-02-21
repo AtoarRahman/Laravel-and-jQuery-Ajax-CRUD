@@ -36,8 +36,6 @@
 	<div class="row">
 		<div class="col-md-3 p-0">
 			<div class="sitebar">
-				<a class="btn btn-info mb-2" href="{{route('images.index')}}">Image List</a><br/>
-				<a class="btn btn-primary mb-2" href="{{route('multiImages.index')}}">Multi Image List</a><br/>
 				<a class="btn btn-success mb-2" href="{{route('students.index')}}">Student List</a>
 			</div>
 		</div>
