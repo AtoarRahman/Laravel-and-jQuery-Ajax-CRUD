@@ -6,11 +6,10 @@
 	<div class="row">
 		<div class="col-md-12">
 			<h5 class="float-left">Student List</h5>
-			<a class="btn btn-info float-right" href="{{url('/')}}">Back</a>
 			<a class="btn btn-success float-right mr-2" href="{{route('students.create')}}">Add Student</a>
 		</div>
 		<div class="col-md-12">
-			<table class="table mt-3">
+			<table class="table table-striped table-bordered mt-3">
 			  <thead class="thead-dark">
 				<tr>
 				  <th scope="col">SL</th>
