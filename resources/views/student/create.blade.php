@@ -1,16 +1,11 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-<head>
-	<meta charset="UTF-8">
-	<title>Laravel Image CURD</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	
-</head>
-<body>
-<div class="container mt-3">
+@extends('Layout.app')
+@section('title','Home')
+@section('content')
+
+<div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="jumbotron">
+			<div class="jumbotron pt-4 mt-3">
 				<h5>Student Create</h5>
 				<hr/>
 				<form method="POST" action="{{route('students.store')}}" enctype="multipart/form-data">
@@ -39,5 +34,11 @@
 	</div>
 </div>
 
-</body>
-</html>
+
+@endsection
+@section('script')
+<script type="text/javascript">
+
+</script>
+@endsection
+

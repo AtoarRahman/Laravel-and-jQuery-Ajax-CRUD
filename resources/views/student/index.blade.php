@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel - Student List</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-        </style>
-    </head>
-<body>
-
+@extends('Layout.app')
+@section('title','Student List')
+@section('content')
 
 <div class="container mt-3">
 	<div class="row">
@@ -38,10 +28,11 @@
 		</div>
 	</div>
 </div>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+@endsection
+@section('script')
 <script type="text/javascript">
-	
 	(function getImageData(){
 		axios.get('/getStudentData')
 		.then(function(response) {
@@ -78,7 +69,6 @@
             
         });
 	})();
-	
-</script> 
-</body>
-</html>
+</script>
+@endsection
+
